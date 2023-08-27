@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+* {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif ;
+  }
+
+.navbar {
+  /* background-color: #45A698 !important; */
+  background-color: #021A41 !important;
+  
+}
+
+
+.navbar-brand {
+  font-size:1.9rem !important;
+  color : #fff !important;
+  margin-left:20px;
+}
+
+.navbar a {
+  font-size:1.0rem !important;
+  text-transform : capitalize ;
+  color: #fff;
+  letter-spacing: 0.05cm;
+}
+
+.menu_active {
+  font-weight: bold;
+  /* border-bottom: 1px solid #565387; */
+}
+
+.navbar a:hover {
+  color :#FBBC05;
+  font-weight: bold;
+}
+/* .navbar a:active {
+  color :red !important;
+  font-weight: bold !important;
+} */
+
+
+@media (max-width : 991px) {
+  .navbar-brand {
+    font-size:1.5rem !important;
+  }
+  #header {
+    height:80vh;
+    text-align: center; 
+  }
+  #header .header-img {
+    text-align: center;
+  }
+  #header .header-img img {
+    width: 60%;
+  }
+}
+
+@media (max-width : 768px) {
+  #header {
+    margin-top: 20px;
+  }
+  #header h1{
+    font-size: 28px;
+  }
+  #header h2{
+    margin-top: 18px;
+    margin-bottom:30px;
+  }
+  #header .header-img {
+    text-align: center;
+  }
+  #header .header-img img {
+    width: 70%;
+  }
+}
+
+
+
+#header {
+  width:100%;
+  height: 80vh;
+  margin-top:70px;
+}
+#header h1 {
+  margin:0 0 10px 0;
+  font-size: 48px;
+  font-weight:700;
+  color:black;
+}
+#header .brand-name {
+  color:#3498db;
+}
+#header h2 {
+  font-size: 24px;
+  color:#484848;
+}
+
+#header .btn-get-started {
+  font-size: 16px;
+  font-weight:500;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color:#3498db;
+  border: 2px solid #3498db;
+  text-decoration: none;
+}
+#header .btn-get-started:hover {
+  color:#fff;
+  background-color: #3498db;
+}
+
+.header-img {
+  text-align: right;
+}
+
+#header .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+  
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+#img_round {
+  border-radius: 15%;
+}
+
+/* .footer {
+  
+  background-color: #021A41 !important;
+  height:15rem;
+  
+}
+
+.footer a {
+  font-size:1.0rem !important;
+  text-transform : capitalize ;
+  color: #fff;
+  letter-spacing: 0.05cm;
+}
+
+.footer_menu_active {
+  font-weight: bold;
+}
+
+.footer a:hover {
+  color :#FBBC05;
+  font-weight: bold;
+} */
+/*** Footer ***/
+.footer {
+  margin-top: 6rem;
+  padding-top: 9rem;
+  background:
+      url(../images/bg-top.png),
+      url(../images/map.png);
+  background-position:
+      center top,
+      center center;
+  background-repeat: no-repeat;
+}
+
+.footer .btn.btn-social {
+  margin-right: 5px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light);
+  border: 1px solid rgba(256, 256, 256, .1);
+  border-radius: 40px;
+  transition: .3s;
+}
+
+.footer .btn.btn-social:hover {
+  color: var(--primary);
+}
+
+.footer .btn.btn-link {
+  display: block;
+  margin-bottom: 10px;
+  padding: 0;
+  text-align: left;
+  color: var(--light);
+  font-weight: normal;
+  transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+  position: relative;
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+  letter-spacing: 1px;
+  box-shadow: none;
+  color: var(--secondary);
+}
+
+.footer .copyright {
+  padding: 25px 0;
+  font-size: 14px;
+  border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .copyright a {
+  color: var(--light);
+}
+
+.footer .footer-menu a {
+  margin-right: 15px;
+  padding-right: 15px;
+  border-right: 1px solid rgba(255, 255, 255, .1);
+}
+
+.footer .footer-menu a:last-child {
+  margin-right: 0;
+  padding-right: 0;
+  border-right: none;
+}
+
+.footer .copyright a:hover,
+.footer .footer-menu a:hover {
+  color: var(--secondary);
+}

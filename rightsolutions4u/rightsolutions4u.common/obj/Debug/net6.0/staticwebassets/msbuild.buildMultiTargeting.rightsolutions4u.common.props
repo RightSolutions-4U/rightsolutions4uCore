@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\rightsolutions4u.common.props" />
+</Project>

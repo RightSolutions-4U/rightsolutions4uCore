@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - rightsolutions4u.UI</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <div class="container-fluid nav-bg">
+            <div class="row">
+                <div class="col-10 mx-auto">
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="/Home/Index"><img id="img_round" src="~/images/logo.png" alt="Common Img" width="70px" hight="18px"/></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        @*<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                        <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                        </ul>
+                        </div>*@
+                        <div class="collapse navbar-collapse float-end" id="navbarNavDropdown">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="~/Home/Index">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="~/Home/About">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="~/Home/Contact">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="~/Home/Service">Services</a>
+                                </li>
+                                {
+                                @*<li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown link
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                                </li>*@ }
+                            </ul>
+                        </div>
+
+
+                        @*</div>*@
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        @*<div class="container">
+        &copy; 2023 - rightsolutions4u.UI - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>*@
+        <div class="container-fluid bg-secondary text-light footer wow fadeIn" data-wow-delay="0.1s" style="left:10px">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+                    <div class="col-md-3 col-lg-3">
+                        <p class="section-title text-white h5 mb-4">Address<span></span></p>
+                        <p>A 108 block A PCHS, Lahore, Pakistan</p>
+                        <p>+92 312 0416816</p>
+                        <p>info@rightsolutions4u.com</p>
+                      
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                        <p class="section-title text-white h5 mb-4">Quick Link<span></span></p>
+                        <a class="btn btn-link" href="/About">About Us</a>
+                        <a class="btn btn-link" href="/Contact">Contact Us</a>
+                        <a class="btn btn-link" href="/Service">Services</a>
+                        <a class="btn btn-link" href="#">Career</a>
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                        <p class="section-title text-white h5 mb-4">Social<span></span></p>
+                        <div class="row g-2">
+                            <div class="col-4">
+                                <a href="https://www.facebook.com/profile.php?id=100063802633141">
+                                    <img class="img-fluid" src="~/images/facebook.jpg" alt="Image" style="width:40px;height:40px" />
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="https://www.instagram.com/rightsolutions4u/?hl=en">
+                                    <img class="img-fluid" src="~/images/insta.jpg" alt="Image" style="width:40px;height:40px" />
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="https://twitter.com/rightsolutions4">
+                                    <img class="img-fluid" src="~/images/twitter.jpg" alt="Image" style="width:40px;height:40px" />
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; 2023 - rightsolutions4u.UI -  <a class="border-bottom" href="#">RightSolutions4u</a>, All Right Reserved.
+                            Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a><br /><br />
+                            Distributed By a <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

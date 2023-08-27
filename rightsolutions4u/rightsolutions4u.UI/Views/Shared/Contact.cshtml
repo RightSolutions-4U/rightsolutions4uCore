@@ -1,0 +1,57 @@
+﻿<div class="container contact_div">
+@if(ViewBag.message!=null)
+{
+    <div class="col-md-12 col-10 max-auto mb-2">
+        <br />
+        <br />
+        <h4 style="color:maroon;font-style:italic;">@ViewBag.message</h4>
+    </div>
+}
+    <div class="col-md-12 col-10 max-auto mb-2 text-center">
+
+        <br />
+        <br />
+        <h1 style="color:navy;font-style:italic;">Contact Us</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-10 mx-auto">
+            <form action="@Url.Action("Create", "Contact")" method="post">
+                <div class="mb-3">
+                    <label htmlFor="fullName" class="Form-label">Full Name</label>
+                    <input type="text" class="form-control" id="fullName"
+                           name="fullName"
+                           
+                           placeholder="Full Name" aria-describedby="emailHelp" />
+                    
+                </div>
+                <div class="mb-3">
+                    <label htmlFor="phone" class="form-label">Phone</label>
+                    <input type="text" class="form-control" id="phone"
+                           name="phone"
+                           
+                           placeholder="Phone Number" aria-describedby="emailHelp" />
+
+                </div>
+                <div class="mb-3">
+                    <label htmlFor="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email"
+                           name="email"
+                           
+                           aria-describedby="emailHelp" />
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label htmlFor="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message"
+                              name="message"
+                              
+                              rows="3"></textarea>
+
+                </div>
+
+                
+                <button type="submit" class="btn btn-outline-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
